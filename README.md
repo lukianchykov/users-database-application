@@ -68,7 +68,7 @@ The `mapping` section defines how database columns map to the unified User model
 
 ## Running the Application
 
-### Method 1: Using Docker Compose
+### Using Docker Compose
 
 1. **Build the application**:
    ```bash
