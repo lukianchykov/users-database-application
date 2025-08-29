@@ -34,20 +34,19 @@ Create or modify `src/main/resources/data-sources.yml`:
 ```yaml
 data-sources:
   - name: data-base-1
-    strategy: postgres  # Optional: postgres, mysql, oracle
-    url: jdbc:postgresql://localhost:5432/db1
+    strategy: postgres # Optional: postgres, mysql, oracle
+    url: jdbc:postgresql://postgres1:5432/db1
     table: users
     user: testuser
     password: testpass
     mapping:
-      id: user_id
-      username: login
-      name: first_name
-      surname: last_name
-  
+      id: id
+      username: username
+      name: name
+      surname: surname
   - name: data-base-2
     strategy: postgres
-    url: jdbc:postgresql://localhost:5433/db2
+    url: jdbc:postgresql://postgres2:5432/db2
     table: user_table
     user: testuser
     password: testpass
